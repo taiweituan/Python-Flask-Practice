@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/stylesheet.css') }}" rel="stylesheet">
+    </head>
+    <body ng-app="mainApp" ng-controller="mainController">
+        <div class="container">
+            <div class="main-content">
+                Welcome, {{username}}!
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-cookies.js"></script>
+    <script src="{{ url_for('static', filename='js/pogo.js') }}"></script>
+
+</html> 

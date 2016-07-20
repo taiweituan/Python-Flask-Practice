@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/stylesheet.css') }}" rel="stylesheet">
+    </head>
+    <body ng-app="mainApp" ng-controller="mainController">
+        <div class="container">
+            <div class="main-content">
+                <h1 ng-click="test()">Hello World</h1>
+
+                <!--<div ng-view></div>-->
+                <form class="form-signin" action="login" method="POST">
+                    <label for="inputEmail" class="sr-only">Email address</label>
+                    <input type="text" name="email" id="inputEmail" class="form-control" placeholder="Email Address">
+                    <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password">
+                    <button type="submit" class="btn btn-primary" style="margin:10px 0">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-cookies.js"></script>
+    <script src="{{ url_for('static', filename='js/pogo.js') }}"></script>
+
+</html> 
